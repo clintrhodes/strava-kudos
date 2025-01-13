@@ -8,6 +8,7 @@ on:
 env:
   STRAVA_EMAIL: ${{ secrets.STRAVA_EMAIL }}
   STRAVA_PASSWORD: ${{ secrets.STRAVA_PASSWORD }}
+  STRAVA_ATHLETE_ID: ${{ secrets.STRAVA_ATHLETE_ID }}
 jobs:
   run-kudos-cron:
     runs-on: ubuntu-20.04
