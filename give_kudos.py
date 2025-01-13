@@ -177,7 +177,8 @@ class KudosGiver:
             print("Accepting updated terms.")
         except Exception as _:
             pass
-        web_feed_entry_locator = self.page.locator(self.web_feed_entry_pattern)
+        ##web_feed_entry_locator = self.page.locator(self.web_feed_entry_pattern)
+        web_feed_entry_locator = self.page.get_by_test_id("web-feed-entry")
         self.locate_kudos_buttons_and_maybe_give_kudos(web_feed_entry_locator=web_feed_entry_locator)
         self.browser.close()
 
